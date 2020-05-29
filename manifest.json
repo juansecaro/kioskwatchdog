@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "ElEspia",
+  "version": "0.0.1",
+  "browser_specific_settings": {
+    "firefox": {
+      "id": "undisclosed@undisclosed.org"
+    }
+  },
+ 
+  "description": "Watchdog for kiosk-like systems browser based",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "permissions": ["webNavigation", "tabs"],
+
+  "background": {
+    "scripts": ["watchdog.js"],
+    "persistent": true
+  }
+}
